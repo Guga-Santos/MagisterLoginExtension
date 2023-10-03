@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "MagisterLogin",
+  "version": "1.0",
+
+  "description": "Efetua o Login.",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facipe.edu.br/*"],
+      "js": ["magisterLogin.js"]
+    }
+  ]
+}
